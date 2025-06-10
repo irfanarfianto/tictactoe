@@ -102,3 +102,12 @@ body {
    color: #2563eb;
    text-decoration: underline;
 }
+
+#win-line {
+   height: 8px;
+   width: 0;
+   top: 0;
+   left: 0;
+   transform-origin: left center;
+   opacity: 0;
+}

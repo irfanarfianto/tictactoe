@@ -12,7 +12,8 @@
   <div class="flex flex-col items-center justify-center p-6 bg-white rounded-2xl shadow-xl space-y-8 max-w-lg w-full">
     <h1 class="text-4xl font-extrabold text-gray-800 mb-4">Tic-Tac-Toe</h1>
     <div id="game-status" class="status">Giliran: X</div>
-    <div id="game-board" class="board">
+    <div id="game-board" class="board relative w-[300px] h-[300px] grid grid-cols-3 grid-rows-3 gap-1">
+      <div id="win-line" class="absolute bg-red-500 rounded-full transition-all duration-500 ease-in-out z-10"></div>
       <div class="cell" data-cell-index="0"></div>
       <div class="cell" data-cell-index="1"></div>
       <div class="cell" data-cell-index="2"></div>
@@ -22,7 +23,7 @@
       <div class="cell" data-cell-index="6"></div>
       <div class="cell" data-cell-index="7"></div>
       <div class="cell" data-cell-index="8"></div>
-    </div>
+    </div>    
     <button id="reset-button" class="reset-button">Mulai Ulang</button>
   </div>
 
