@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-100 to-indigo-200">
+  <div class="flex flex-col items-center justify-center p-6 bg-white rounded-2xl shadow-xl space-y-8 max-w-lg w-full">
+    <h1 class="text-4xl font-extrabold text-gray-800 mb-4">Tic-Tac-Toe</h1>
+    <div id="game-status" class="status">Giliran: X</div>
+    <div id="game-board" class="board">
+      <div class="cell" data-cell-index="0"></div>
+      <div class="cell" data-cell-index="1"></div>
+      <div class="cell" data-cell-index="2"></div>
+      <div class="cell" data-cell-index="3"></div>
+      <div class="cell" data-cell-index="4"></div>
+      <div class="cell" data-cell-index="5"></div>
+      <div class="cell" data-cell-index="6"></div>
+      <div class="cell" data-cell-index="7"></div>
+      <div class="cell" data-cell-index="8"></div>
+    </div>
+    <button id="reset-button" class="reset-button">Mulai Ulang</button>
+  </div>
+
+  <footer class="footer">
+    Dibuat oleh <a href="https://www.linkedin.com/in/irfanarfianto11/" target="_blank" rel="noopener noreferrer">Irfan Arfianto</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
